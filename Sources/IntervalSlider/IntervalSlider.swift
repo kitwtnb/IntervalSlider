@@ -57,7 +57,7 @@ public class IntervalSlider: UIView {
     }
 
     public var delegate: IntervalSliderDelegate?
-    public var slider: TapSlider!
+    private var slider: TapSlider!
     private var sources = [IntervalSliderSource]()
     private var labels = [UILabel]()
     private var marks = [UIView]()
@@ -265,5 +265,9 @@ public class IntervalSlider: UIView {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image;
+    }
+
+    func setThumbImage(_ image: UIImage?, for state: UIControl.State) {
+        slider.setThumbImage(image, for: state)
     }
 }

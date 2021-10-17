@@ -57,7 +57,7 @@ public class IntervalSlider: UIView {
     }
 
     public var delegate: IntervalSliderDelegate?
-    private var slider: TapSlider!
+    public var slider: TapSlider!
     private var sources = [IntervalSliderSource]()
     private var labels = [UILabel]()
     private var marks = [UIView]()

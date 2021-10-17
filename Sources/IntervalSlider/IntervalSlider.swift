@@ -267,7 +267,7 @@ public class IntervalSlider: UIView {
         return image;
     }
 
-    func setThumbImage(_ image: UIImage?, for state: UIControl.State) {
+    public func setThumbImage(_ image: UIImage?, for state: UIControl.State) {
         slider.setThumbImage(image, for: state)
     }
 }
